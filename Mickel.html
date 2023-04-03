@@ -1,0 +1,453 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mickel jackson</title>
+</head>
+<body>
+  <script src="https://kit.fontawesome.com/06b45a7278.js" crossorigin="anonymous"></script>
+  <h1>Famous of Mickel Jackson &#9834;</h1>
+  <div class="nav">
+    <div class="home"><a href="index.html">HOME</a></div>
+    <div class="home" ><a href="indianMusic.html">Indian music</a></div>
+    <div class="home"><a href="pop.html">POP MUSIC</a></div>
+  </div>
+  <div class="container">
+    <center>
+    <div class="mahesh_babu">
+      <img src="https://i.ytimg.com/vi/vLyxUhPn_Bo/maxresdefault.jpg">
+   <br>
+      <h3>Dangerous</h3>
+      <p>mickel jackson/mp3</p>
+      <input type="range" value="0" id="progress">
+      <div class="iconBackground">
+       <div class="fas fa-fast-backward"></div>
+    <div onclick="playPause();" class='fas fa-play' id="cntrl"></div>
+<div class='fas fa-fast-forward'></div>
+</div>
+    </div>
+   <div class="mahesh_babu">
+     <img src="https://i1.sndcdn.com/artworks-sHVMKKdFx5Q9j8Op-YdOuMg-t500x500.jpg">
+     <h3>Michael Jackson - They Don’t Care About Us</h3>
+     <p>(Brazil Version) (Official Audio)</p>
+     <input type="range" value="0" id="progress2">
+      <div class="iconBackground">
+    <div  class='fas fa-fast-backward'></div>
+ <div onclick="play();" class='fas fa-play' id="cntrl2"></div>
+<div class='fas fa-fast-forward'></div> 
+   </div>
+  </div>
+  
+   <div class="mahesh_babu">
+     <img src="https://w0.peakpx.com/wallpaper/288/900/HD-wallpaper-michael-jackson-applehead-michael-jackson-michael-jackson-applehead-mj.jpg">
+     <h3>The Way You Make Me Feel </h3>
+     <p></p>
+     <input type="range" value="0" id="progress3">
+      <div class="iconBackground">
+    <div  class='fas fa-fast-backward'></div>
+ <div onclick="play3();" class='fas fa-play' id="cntrl3"></div>
+<div class='fas fa-fast-forward'></div>
+</div>
+</div>
+
+<div class="mahesh_babu">
+  <img src="https://i0.wp.com/dominioamigo.com.co/wp-content/uploads/2022/11/1669821277_michael-jakson-620x400.png?fit=620400&ssl=1">
+  <h3>2000 WATTS</h3>
+  <p>200 watts by mickel jackson</p>
+  <input type="range" value="0" id="progress4">
+   <div class="iconBackground">
+ <div  class='fas fa-fast-backward'></div>
+<div onclick="play4();" class='fas fa-play' id="cntrl4"></div>
+<div class='fas fa-fast-forward'></div>
+</div>
+</div>
+</center>
+   </div>
+  </div>
+    <audio id="song">
+<source src="C:\Users\pc\Desktop\wepage\songs\Michael Jackson - Dangerous HQ.mp3" type="audio/mp3"></source>
+      </audio> 
+      
+      <audio  id="song2">
+        <source src="C:\Users\pc\Desktop\wepage\songs\They Dont Care About Us Michael Jackson 320 Kbps.mp3">
+      </audio>
+      
+      <audio   id="song3">
+        <source src="C:\Users\pc\Desktop\wepage\songs\The Way You Make Me Feel Michael Jackson 128 Kbps.mp3">
+      </audio>
+      <audio   id="song4">
+        <source src="C:\Users\pc\Desktop\wepage\songs\Michael-Jackson-2000-Watts-24Naijamuzic-com.mp3">
+      </audio>
+      
+<script src="js/main.js"></script>
+    <style>
+      @media  screen and (max-width:767px) {
+      import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: black;
+}
+.container{
+  width:100%;
+}
+.mahesh_babu{
+ background-color: ghostwhite;
+ color:black;
+ margin:20px;
+ padding:20px;
+ border-radius:10px;
+}
+h1{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 20px;
+    padding: 10px;
+    border:1px solid white;
+    text-align: center;
+    border-radius:10px;
+    box-shadow: 2px 2px 10px whitesmoke;
+}
+h3,img{
+  display: inline;
+}
+h3,p{
+ margin: 0px;
+}
+img{
+  display: flex;
+  margin: 0px auto;
+  border-radius: 10px;
+  width: 150px;
+}
+}
+.iconBackground{
+  color: black;
+  width: 90%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+#progress{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid palevioletred;
+}
+#progress2{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress2::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid palevioletred;
+} 
+#progress3{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress3::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid palevioletred;
+} 
+
+#progress4{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress4::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid palevioletred;
+}
+
+#progress5{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress5::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid palevioletred;
+}
+.iconBackground div:nth-child(2){
+  transform: scale(1.5);
+  color: white;
+  background-color: palevioletred;
+  padding: 10px;
+  border-radius: 10px;
+}
+.fas{
+  margin: 20px;
+  width: 10%;
+}
+.fas:hover{
+  cursor: pointer;
+ }
+ .FOOTER{
+  width: 20%;
+  font-size: 20px;
+  text-align: center;
+  color: grey;
+  font-weight: 800;
+  padding: 10px;
+  opacity: 30%;
+  margin:10px auto;
+ }
+ .home{
+      display: inline-block;
+      margin: 10px;
+     }
+     a{
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+     }
+     a:hover{
+      cursor: pointer;
+      transform: translateY(-10px);
+      transition: 1s;
+     }
+     .nav{
+      text-align: center;
+     }
+
+@media  screen and (min-width:992px) {
+  import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: rgb(128, 0, 58);
+}
+.container{
+  width:50%;
+  margin: 0px auto;
+  
+}
+.mahesh_babu{
+ background-color: ghostwhite;
+ color: black;
+ margin:20px;
+ padding:20px;
+ border-radius:10px;
+}
+h1{
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 20px auto;
+    padding: 10px;
+    border:1px solid white;
+    text-align: center;
+    border-radius:10px;
+    box-shadow: 2px 2px 10px whitesmoke;
+    width: 70%;
+    
+}
+h3{
+  font-family:'Brush Script MT';
+  font-size: 40px;
+}
+h3,img{
+  display: inline;
+}
+h3,p{
+ margin: 0px;
+}
+img{
+  display: flex;
+  margin: 0px auto;
+  border-radius: 10px;
+  width: 400px;
+}
+.iconBackground{
+  color: rgb(128, 0, 58);
+  width: 90%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+#progress{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid rgb(128, 0, 58);
+}
+#progress2{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress2::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid rgb(128, 0, 58);
+} 
+#progress3{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress3::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid rgb(128, 0, 58);
+} 
+
+#progress4{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress4::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid rgb(128, 0, 58);
+}
+
+#progress5{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress5::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid rgb(128, 0, 58);
+}
+.iconBackground div:nth-child(2){
+  transform: scale(1.5);
+  color: white;
+  background-color: palevioletred;
+  padding: 10px;
+  border-radius: 10px;
+}
+.iconBackground div:nth-child(2):hover{
+background-color: rgb(128, 0, 58);
+transition: 2s;
+}
+.fas{
+  margin: 20px;
+  width: 10%;
+}
+.fas:hover{
+  cursor: pointer;
+ }
+ .FOOTER{
+  width: 20%;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  padding: 10px;
+  margin:10px auto;
+opacity: 30%;
+ }
+ .home{
+      display: inline-block;
+      margin: 10px;
+     }
+     a{
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+     }
+     a:hover{
+      cursor: pointer;
+      transform: translateY(-10px);
+      transition: 1s;
+     }
+     .nav{
+      text-align: center;
+     }
+}
+    </style>
+    <div class="FOOTER">VB CODERS</div>
+</body>
+</html>

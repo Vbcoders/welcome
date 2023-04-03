@@ -1,0 +1,470 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Indian music</title>
+</head>
+<body>
+  <script src="https://kit.fontawesome.com/06b45a7278.js" crossorigin="anonymous"></script>
+  <h1>Indian Music &#9834;</h1>
+  <div class="nav">
+    <div class="home"><a href="index.html">HOME</a></div>
+    <div class="home" ><a href="Mickel.html">Mickel jackson</a></div>
+    <div class="home"><a href="pop.html">POP MUSIC</a></div>
+  </div>
+  <div class="container">
+    <center>
+    <div class="mahesh_babu">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS125oivV16SbtsL9eaOCsZa0CERlQhGDjMhw&usqp=CAU">
+   <br>
+      <h3>Sarkaru vaari paata</h3>
+      <p>Kalavathi-telugu-mp3</p>
+      <input type="range" value="0" id="progress">
+      <div class="iconBackground">
+       <div class="fas fa-fast-backward"></div>
+    <div onclick="playPause();" class='fas fa-play' id="cntrl"></div>
+<div class='fas fa-fast-forward'></div>
+</div>
+    </div>
+   <div class="mahesh_babu">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZuLitU7vsC1jl22MrLC-S_tsIKhuCZdPwsQ&usqp=CAU">
+     <h3>Hridayam</h3>
+     <p>Dharshanaa Song/mp3</p>
+     <input type="range" value="0" id="progress2">
+      <div class="iconBackground">
+    <div  class='fas fa-fast-backward'></div>
+ <div onclick="play();" class='fas fa-play' id="cntrl2"></div>
+<div class='fas fa-fast-forward'></div> 
+   </div>
+  </div>
+  
+   <div class="mahesh_babu">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWLFiCUyjWUUxqK_Uo9xH8OcSq1ClVzcwnSg&usqp=CAU">
+     <h3>THIRU</h3>
+     <p>Naa madhi-telugu/mp3</p>
+     <input type="range" value="0" id="progress3">
+      <div class="iconBackground">
+    <div  class='fas fa-fast-backward'></div>
+ <div onclick="play3();" class='fas fa-play' id="cntrl3"></div>
+<div class='fas fa-fast-forward'></div>
+</div>
+   </div>
+
+<div class="mahesh_babu">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCWXooQWbdCXVViwecm6Q3t9TTDaX4D4j3mw&usqp=CAU">
+     <h3>Kabhir Singh</h3>
+     <p>Bhekhayali-mp3</p>
+     <input type="range" value="0" id="progress4">
+      <div class="iconBackground">
+    <div  class='fas fa-fast-backward'></div>
+ <div onclick="play4();" class='fas fa-play' id="cntrl4"></div>
+<div class='fas fa-fast-forward'></div>
+</div>
+   </div>
+   
+   <div class="mahesh_babu">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Zw0OADjPOuUaxdxeMZCEwJwTbvGS0tvGqw&usqp=CAU">
+     <h3>Ashique 2</h3>
+     <p>Tum hi ho</p>
+     <input type="range" value="0" id="progress5">
+      <div class="iconBackground">
+    <div  class='fas fa-fast-backward'></div>
+ <div onclick="play5();" class='fas fa-play' id="cntrl5"></div>
+<div class='fas fa-fast-forward'></div>
+</div>
+</center>
+   </div>
+  </div>
+    <audio id="song">
+<source src="C:\Users\pc\Desktop\wepage\songs\Kalaavathi.mp3" type="audio/mp3"></source>
+      </audio> 
+      
+      <audio  id="song2">
+        <source src="C:\Users\pc\Desktop\wepage\songs\Darshana-Hridayam.mp3">
+      </audio>
+      
+      <audio   id="song3">
+        <source src="C:\Users\pc\Desktop\wepage\songs\[iSongs.info] 02 - Naa Madhi.mp3">
+      </audio>
+      
+      <audio  id="song4">
+        <source src="C:\Users\pc\Desktop\wepage\songs\01_-_Bekhayali_-_Kabir_Singh_(2019).mp3">
+      </audio>
+
+<audio   id="song5">
+  <source src="C:\Users\pc\Desktop\wepage\songs\Tum Hi Ho.mp3">
+</audio>
+<script src="js/main.js"></script>
+    <style>
+      @media  screen and (max-width:767px) {
+      import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: black;
+}
+.container{
+  width:100%;
+}
+.mahesh_babu{
+ background-color: ghostwhite;
+ color:black;
+ margin:20px;
+ padding:20px;
+ border-radius:10px;
+}
+h1{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 20px;
+    padding: 10px;
+    border:1px solid white;
+    text-align: center;
+    border-radius:10px;
+    box-shadow: 2px 2px 10px whitesmoke;
+}
+h3,img{
+  display: inline;
+}
+h3,p{
+ margin: 0px;
+}
+img{
+  display: flex;
+  margin: 0px auto;
+  border-radius: 10px;
+  width: 150px;
+}
+}
+.iconBackground{
+  color: black;
+  width: 90%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+#progress{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid palevioletred;
+}
+#progress2{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress2::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid palevioletred;
+} 
+#progress3{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress3::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid palevioletred;
+} 
+
+#progress4{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress4::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid palevioletred;
+}
+
+#progress5{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress5::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid palevioletred;
+}
+.iconBackground div:nth-child(2){
+  transform: scale(1.5);
+  color: white;
+  background-color: palevioletred;
+  padding: 10px;
+  border-radius: 10px;
+}
+.fas{
+  margin: 20px;
+  width: 10%;
+}
+.fas:hover{
+  cursor: pointer;
+ }
+ .FOOTER{
+  width: 20%;
+  font-size: 20px;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 800;
+  padding: 10px;
+  margin:10px auto;
+  border-radius: 10px; 
+  opacity: 20%;
+ }
+ .home{
+      display: inline-block;
+      margin: 10px;
+     }
+     a{
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+     }
+     a:hover{
+      cursor: pointer;
+      transform: translateY(-10px);
+      transition: 1s;
+     }
+     .nav{
+      text-align: center;
+     }
+
+@media  screen and (min-width:992px) {
+  import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: rgb(128, 0, 58);
+}
+.container{
+  width:50%;
+  margin: 0px auto;
+  
+}
+.mahesh_babu{
+ background-color: ghostwhite;
+ color: black;
+ margin:20px;
+ padding:20px;
+ border-radius:10px;
+}
+h1{
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 20px auto;
+    padding: 10px;
+    border:1px solid white;
+    text-align: center;
+    border-radius:10px;
+    box-shadow: 2px 2px 10px whitesmoke;
+    width: 70%;
+    
+}
+h3{
+  font-family:'Brush Script MT';
+  font-size: 40px;
+}
+h3,img{
+  display: inline;
+}
+h3,p{
+ margin: 0px;
+}
+img{
+  display: flex;
+  margin: 0px auto;
+  border-radius: 10px;
+  width: 400px;
+}
+.iconBackground{
+  color: rgb(128, 0, 58);
+  width: 90%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+#progress{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid rgb(128, 0, 58);
+}
+#progress2{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress2::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid rgb(128, 0, 58);
+} 
+#progress3{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress3::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid rgb(128, 0, 58);
+} 
+
+#progress4{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress4::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid rgb(128, 0, 58);
+}
+
+#progress5{
+  -webkit-appearance: none;
+  border-radius: 20px;
+  width: 50%;
+  height: 5px;
+  background-color: palevioletred;
+  margin: 10px 0px;
+}
+#progress5::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: palevioletred;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border:10px solid rgb(128, 0, 58);
+}
+.iconBackground div:nth-child(2){
+  transform: scale(1.5);
+  color: white;
+  background-color: palevioletred;
+  padding: 10px;
+  border-radius: 10px;
+}
+.iconBackground div:nth-child(2):hover{
+background-color: rgb(128, 0, 58);
+transition: 2s;
+}
+.fas{
+  margin: 20px;
+  width: 10%;
+}
+.fas:hover{
+  cursor: pointer;
+ }
+ .FOOTER{
+  width: 20%;
+  font-size: 20px;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 800;
+  padding: 10px;
+  margin:10px auto;
+  border-radius: 10px;
+ opacity: 30%;
+ }
+ .home{
+  display: inline-block;
+  margin: 10px;
+ }
+ a{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+ }
+ a:hover{
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: 1s;
+ }
+ .nav{
+  text-align: center;
+ }
+}
+</style>
+<div class="FOOTER">VB CODERS</div>
+</body>
+</html>
